@@ -106,7 +106,7 @@ for(let i = 0; i<graduates.length; i++){
     uni.push(graduates[i].university);
   }
 }
-console.log(uni);
+console.log(JSON.stringify(uni));
 
 
 // ==== ADVANCED Array Methods ====
@@ -131,7 +131,11 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
-console.log(animalNames);
+zooAnimals.forEach(element => {
+  animalNames.push(`Name: ${element.animal_name}, Scientific: ${element.scientific_name}`)
+  
+});
+console.log(JSON.stringify(animalNames));
 
 /* Request 2: .map()    
 
