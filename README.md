@@ -42,9 +42,17 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. Describe the four rules of the 'this' keyword.
 
-   Global Object Binding:
+   Global Object Binding: When in global scope the this will refer to the window.
+
+   Implicit Binding: When using a method is called the object left of the dot is this.
+
+   New Binding: The this keyword will refer to a the instance of the object created by the constructor function from using the new keyword.
+
+   Explicit Binding: When using the apply or call methods THIS will be defined by explicitly by what is passed.
 
 5. Why do we need super() in an extended class?
+    
+    The super() removes the need for Object.create to bind.
 
 ## Project Set up
 
